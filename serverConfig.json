@@ -1,0 +1,13 @@
+{
+  "dev": {
+    "author": [
+      "server-1"
+    ],
+    "publisher": [
+      "server-2"
+    ],
+    "dispatcher": [
+      "server-3"
+    ]
+  }
+}
