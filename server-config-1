@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    cleanWs()
+                    configFileProvider(
+                            [configFile(fileId: 'ServerConfig', variable: 'serverConfig')]) {
+                        echo serverConfig
+                            }
+                }
+            }
+        }
+    }
+}
