@@ -7,7 +7,7 @@ pipeline {
                 script {
                     cleanWs()
                     configFileProvider(
-                            [configFile(fileId: 'ServerConfig', variable: 'serverConfig')]) {
+                            [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
                         echo serverConfig
                             }
                 }
