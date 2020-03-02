@@ -1,0 +1,98 @@
+{
+  "devEnv": {
+    "author": [
+      "ito027492.hosts.cloud.ford.com"
+    ],
+    "publisher": [
+      "ito027493.hosts.cloud.ford.com"
+    ],
+    "dispatcher": [
+      "ito027494.hosts.cloud.ford.com"
+    ]
+  },
+  "intEnv": {
+    "author": [
+      "ito032016.hosts.cloud.ford.com"
+    ],
+    "publisher": [
+      "ito032017.hosts.cloud.ford.com",
+      "ito032018.hosts.cloud.ford.com",
+      "ito032019.hosts.cloud.ford.com",
+      "ito032020.hosts.cloud.ford.com"
+    ],
+    "dispatcher": [
+      "ito032025.hosts.cloud.ford.com",
+      "ito032022.hosts.cloud.ford.com",
+      "ito032023.hosts.cloud.ford.com",
+      "ito032028.hosts.cloud.ford.com"
+    ]
+  },
+  "qaEnv": {
+    "author": [
+      "ito033700.hosts.cloud.ford.com"
+    ],
+    "publisher": [
+      "ito033701.hosts.cloud.ford.com",
+      "ito033702.hosts.cloud.ford.com",
+      "ito033703.hosts.cloud.ford.com",
+      "ito033704.hosts.cloud.ford.com"
+    ],
+    "dispatcher": [
+      "ito033705.hosts.cloud.ford.com",
+      "ito033706.hosts.cloud.ford.com",
+      "ito033707.hosts.cloud.ford.com",
+      "ito033708.hosts.cloud.ford.com"
+    ]
+  },
+  "perfEnv": {
+    "author": [
+      "ito033724.hosts.cloud.ford.com"
+    ],
+    "publisher": [
+      "ito033725.hosts.cloud.ford.com",
+      "ito033726.hosts.cloud.ford.com",
+      "ito033729.hosts.cloud.ford.com",
+      "ito033727.hosts.cloud.ford.com",
+      "ito033728.hosts.cloud.ford.com",
+      "ito033730.hosts.cloud.ford.com",
+      "ito033732.hosts.cloud.ford.com",
+      "ito033731.hosts.cloud.ford.com"
+    ],
+    "dispatcher": [
+      "ito033733.hosts.cloud.ford.com",
+      "ito033734.hosts.cloud.ford.com",
+      "ito033735.hosts.cloud.ford.com",
+      "ito033736.hosts.cloud.ford.com",
+      "ito033737.hosts.cloud.ford.com",
+      "ito033738.hosts.cloud.ford.com",
+      "ito033739.hosts.cloud.ford.com",
+      "ito033740.hosts.cloud.ford.com"
+    ]
+  },
+  "prodEnv": {
+    "author": [
+      "ito033744.hosts.cloud.ford.com"
+    ],
+    "publisher": [
+      "ito033743.hosts.cloud.ford.com",
+      "ito033745.hosts.cloud.ford.com",
+      "ito033746.hosts.cloud.ford.com",
+      "ito033747.hosts.cloud.ford.com",
+      "ito033748.hosts.cloud.ford.com",
+      "ito033749.hosts.cloud.ford.com",
+      "ito033750.hosts.cloud.ford.com",
+      "ito033752.hosts.cloud.ford.com"
+    ],
+    "dispatcher": [
+      "ito033751.hosts.cloud.ford.com",
+      "ito033753.hosts.cloud.ford.com",
+      "ito033754.hosts.cloud.ford.com",
+      "ito033755.hosts.cloud.ford.com",
+      "ito033788.hosts.cloud.ford.com",
+      "ito033757.hosts.cloud.ford.com",
+      "ito033758.hosts.cloud.ford.com",
+      "ito033759.hosts.cloud.ford.com"
+
+    ]
+  }
+}
