@@ -6,7 +6,9 @@ pipeline {
             steps {
                 script {
                     echo 'starting the build state'
-              
+                     configFileProvider(
+                            [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
+                        echo serverConfig
                      echo 'ending the build state'
                 }
             }
