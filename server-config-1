@@ -5,10 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 script {
+                    echo 'starting the build state'
                     configFileProvider([configFile(fileId: 'serverConfig', variable: 'sConfig')]) {
                         echo $sConfig
                         echo sConfig
                      }
+                     echo 'ending the build state'
                 }
             }
         }
