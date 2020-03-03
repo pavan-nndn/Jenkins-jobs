@@ -5,9 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    configFileProvider([configFile(fileId: 'serverConfig.json', variable: 'serverConfig')]) {
-                        echo $serverConfig
-                        echo serverConfig
+                    configFileProvider([configFile(fileId: 'serverConfig', variable: 'sConfig')]) {
+                        echo $sConfig
+                        echo sConfig
                      }
                 }
             }
