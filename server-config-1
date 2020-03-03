@@ -7,8 +7,10 @@ pipeline {
                 script {
                     echo 'starting the build state'
                      configFileProvider(
-                            [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
-                        echo serverConfig
+                            [configFile(fileId: 'ServerConfig', variable: 'serverConfig')]) {
+                        Map servers = readJSON file: serverConfig
+                        
+                        echo servers
                      echo 'ending the build state'
                      }
                 }
