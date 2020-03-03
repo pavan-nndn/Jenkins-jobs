@@ -5,11 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    
-                    configFileProvider(
-                            [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
+                    configFileProvider([configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
                         echo $serverConfig
-                            }
+                        echo serverConfig
+                     }
                 }
             }
         }
