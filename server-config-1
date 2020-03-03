@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    cleanWs()
+                    
                     configFileProvider(
                             [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
                         echo $serverConfig
