@@ -8,7 +8,7 @@ pipeline {
                     echo 'starting the build state'
                     sh 'pwd'
                      //Map servers = readJSON file: serverConfig
-                     sshagent(credentials: ["guxgit1"]) {
+                     sshAgent(credentials: ["guxgit1"]) {
                      echo 'ssh is working'
                      }
                      //echo servers
