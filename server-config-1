@@ -8,13 +8,17 @@ pipeline {
                     echo 'starting the build state'
                     sh 'pwd'
                      //Map servers = readJSON file: serverConfig
-                     sshagent(credentials: ["guxgit1"]) {
-                     echo 'ssh is working'
-                     sh 'ssh -i'
-                     }
+                     //sshagent(credentials: ["guxgit1"]) {
+                     //echo 'ssh is working'
+                     //sh 'ssh -i'
+                     //}
                      //echo servers
-                     echo 'ending the build state'
                      
+                     configFileProvider(
+                            [configFile(fileId: 'ServerConfig', variable: 'serverConfig',targetLocation:'.')]) {
+                        echo serverConfig
+                     echo 'ending the build state'
+                     }
                 }
             }
         }
