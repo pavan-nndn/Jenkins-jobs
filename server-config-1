@@ -6,6 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'starting the build state'
+                    sh 'pwd'
                      configFileProvider(
                             [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
                         Map servers = readJSON file: serverConfig
