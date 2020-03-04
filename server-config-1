@@ -10,7 +10,7 @@ pipeline {
                      //Map servers = readJSON file: serverConfig
                      sshagent(credentials: ["guxgit1"]) {
                      echo 'ssh is working'
-                     ssh -i
+                     sh 'ssh -i'
                      }
                      //echo servers
                      echo 'ending the build state'
