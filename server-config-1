@@ -15,7 +15,7 @@ pipeline {
                      //echo servers
                      
                      configFileProvider(
-                            [configFile(fileId: 'ServerConfig', variable: 'serverConfig',targetLocation:'./workspace/Declarative-Pipeline-Jobs/d-pipeline-test/')]) {
+                            [configFile(fileId: 'ServerConfig', variable: 'serverConfig')]) {
                         echo serverConfig
                      echo 'ending the build state'
                      }
