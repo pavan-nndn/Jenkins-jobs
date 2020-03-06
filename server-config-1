@@ -16,8 +16,11 @@ pipeline {
                      
                      configFileProvider(
                             [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
-                             echo serverConfig
-                     echo 'ending the build state'
+                             echo '$serverConfig'
+                             def servers = readJSON file: serverConfig
+                             def dispatcherServer = servers[selEnv]['dispatcher'][0]
+                             echo "dispatcherServer $dispatcherServer"
+                             echo 'ending the build state'
                      }
                 }
             }
