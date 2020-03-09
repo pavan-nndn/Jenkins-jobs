@@ -8,7 +8,7 @@ pipeline {
                     echo 'starting the build state'
                     configFileProvider(
                             [configFile(fileId: 'serverConfig', variable: 'sc')]) {
-                             echo $serverConfig
+                             echo $sc
                              def servers = readJSON file: sc
                              def dispatcherServer = servers[prod]['dispatcher'][0]
                              echo "dispatcherServer $dispatcherServer"
