@@ -18,7 +18,7 @@ pipeline {
                             [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
                              echo '$serverConfig'
                              def servers = readJSON file: serverConfig
-                             def dispatcherServer = servers[prodEnv]['dispatcher'][0]
+                             def dispatcherServer = servers[prod]['dispatcher'][0]
                              echo "dispatcherServer $dispatcherServer"
                              echo 'ending the build state'
                      }
