@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
+                    cleanWs()
                     echo 'starting the build state'
                     configFileProvider(
                             [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
