@@ -10,7 +10,7 @@ pipeline {
                     configFileProvider(
       [configFile(fileId: 'ServerConfig', variable: 'serverConfig')]) {
                     def servers = readJSON file: serverConfig
-                    def author = servers['prod']['author']
+                    def author = servers[prod]['author']
                     echo author
                     }
                 }
