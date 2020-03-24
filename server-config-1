@@ -5,13 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    cleanWs()
+                    
                     echo 'starting the build state'
                     configFileProvider(
                             [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
-                            echo serverConfig
+                            echo 'server config' serverConfig
                              def servers = readJSON file: serverConfig
-                             echo 'servers' ${servers}
                              def dispatcherServer = servers[dev1]['dispatcher'][0]
                              echo "dispatcherServer $dispatcherServer"
                              echo 'ending the build state'
