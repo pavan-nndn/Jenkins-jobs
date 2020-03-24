@@ -55,7 +55,7 @@
 
     ]
   },
-  "perfEnv": {
+  "perf": {
     "author": [
       "ito028614.hosts.cloud.ford.com"
     ],
@@ -78,7 +78,7 @@
 
     ]
   },
-  "prodEnv": {
+  "prod": {
     "author": [
       "ito028633.hosts.cloud.ford.com"
     ],
