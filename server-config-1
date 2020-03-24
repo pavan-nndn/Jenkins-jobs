@@ -8,11 +8,8 @@ pipeline {
                     
                     echo 'starting the build state'
                     configFileProvider(
-                            [configFile(fileId: 'serverConfig', variable: 'serverConfig')]) {
-                            echo 'server config' serverConfig
-                             def servers = readJSON file: serverConfig
-                             def dispatcherServer = servers[dev1]['author']
-                             echo "dispatcherServer $dispatcherServer"
+      [configFile(fileId: 'ServerConfig', variable: 'serverConfig')]) {
+      echo serverConfig
                              echo 'ending the build state'
                      }
                 }
