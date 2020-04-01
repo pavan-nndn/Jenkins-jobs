@@ -8,7 +8,7 @@ pipeline {
                     
                     echo 'starting the build state'
                     configFileProvider(
-      [configFile(fileId: 'ServerConfig', variable: 'serverConfig')]) {
+                    [configFile(fileId: 'ServerConfig', variable: 'serverConfig')]) {
                     echo serverConfig
                     def servers = readJSON file: serverConfig
                     List authorServer = servers['prod']['author']
